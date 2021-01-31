@@ -10,11 +10,11 @@ function echoBranchNote() {
     clean_branch_name=${branch//\*\ /}
     
     # 获取当前分支备注
-    note=`git config branch.$clean_branch_name.note`
+    note=`git config branch.$clean_branch_name.description`
 
     # 判断是否前面带*
     if [ "${branch::1}" == "*" ]; then
-      echo -e "\e[1;34m$branch\e[0m $note"
+      echo -e "\e[1;32m$branch\e[0m $note"
     else
       printf "  $branch $note\n"
     fi
