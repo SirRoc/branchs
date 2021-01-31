@@ -8,8 +8,8 @@ npm link
 npm install https://github.com/SirRoc/branchs.git -g
 
 ##  给分支添加备注
-# $ git config branch.${分支名字}.description 描述信息 或者 git branch --edit-description
-# $ git br 要通过git br
+$ git config branch.${分支名字}.description 描述信息 或者 git branch --edit-description
+$ git br 查看描述信息
 
 ## 市场插件
-# npm i -g git-br
+npm i -g git-br
